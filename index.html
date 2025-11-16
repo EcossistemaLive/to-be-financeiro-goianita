@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título atualizado para Financeiro -->
     <title>TO-BE: Processo Financeiro | Casas Goianita | Live Consultoria</title>
 
+    <!-- Importação de Fontes (Guia de Estilo Live V2) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,34 +14,34 @@
     <style>
         /* --- Núcleo da Identidade Visual (Brand Core) - Guia de Estilo V2 --- */
         :root {
-            [cite_start]/* Paleta Principal [cite: 8] */
-            --primary-bg: #06192a;     [cite_start]/* Azul Petróleo - Fundo principal [cite: 9] */
-            --card-bg: #0A243D;        [cite_start]/* Azul Escuro - Fundo de cards [cite: 12] */
-            --accent-color: #00e800;   [cite_start]/* Verde Vibrante - Destaques, links, titulos [cite: 13] */
+            /* Paleta Principal */
+            --primary-bg: #06192a;     /* Azul Petróleo - Fundo principal */
+            --card-bg: #0A243D;        /* Azul Escuro - Fundo de cards */
+            --accent-color: #00e800;   /* Verde Vibrante - Destaques, links, titulos */
             
-            [cite_start]/* Textos [cite: 15] */
-            --text-primary: #ffffff;   [cite_start]/* Branco - Textos principais [cite: 16] */
-            --text-muted: #cccccc;     [cite_start]/* Cinza Claro [cite: 17] */
-            --text-subtle: #a0a0a0;     [cite_start]/* Cinza - Textos secundários e parágrafos [cite: 19] */
+            /* Textos */
+            --text-primary: #ffffff;   /* Branco - Textos principais */
+            --text-muted: #cccccc;     /* Cinza Claro */
+            --text-subtle: #a0a0a0;     /* Cinza - Textos secundários e parágrafos */
             
-            [cite_start]/* Bordas e Efeitos [cite: 21] */
-            --border-color: rgba(255, 255, 255, 0.1); [cite_start]/* [cite: 22] */
-            --accent-glow: 0 0 8px rgba(0, 232, 0, 0.7); [cite_start]/* Sombra para o verde vibrante [cite: 23] */
+            /* Bordas e Efeitos */
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-glow: 0 0 8px rgba(0, 232, 0, 0.7); /* Sombra para o verde vibrante */
 
-            [cite_start]/* Tipografia [cite: 38] */
-            --font-primary: 'Poppins', sans-serif; [cite_start]/* [cite: 39] */
-            --font-secondary: 'Merriweather', serif; [cite_start]/* [cite: 39] */
+            /* Tipografia */
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Merriweather', serif; /* Apenas para diagnósticos */
 
-            [cite_start]/* Tamanhos de Fonte (Mobile-First) [cite: 40] */
-            --font-size-base: 1.1rem; [cite_start]/* [cite: 41] */
-            --font-size-h3: 1.5rem; [cite_start]/* [cite: 42] */
-            --font-size-h2: clamp(2rem, 4vw, 2.5rem); [cite_start]/* [cite: 43] */
-            --font-size-h1: clamp(2.5rem, 5vw, 3rem); [cite_start]/* [cite: 44] */
+            /* Tamanhos de Fonte (Mobile-First) */
+            --font-size-base: 1.1rem;
+            --font-size-h3: 1.5rem;
+            --font-size-h2: clamp(2rem, 4vw, 2.5rem);
+            --font-size-h1: clamp(2.5rem, 5vw, 3rem);
 
-            [cite_start]/* Escala de Espaçamento [cite: 56] */
-            --space-sm: 1rem; [cite_start]/* 16px [cite: 57] */
-            --space-md: 2rem; [cite_start]/* 32px [cite: 59] */
-            --space-lg: 4rem; [cite_start]/* 64px [cite: 60] */
+            /* Escala de Espaçamento */
+            --space-sm: 1rem; /* 16px */
+            --space-md: 2rem; /* 32px */
+            --space-lg: 4rem; /* 64px */
         }
         /* --- Fim dos Tokens --- */
 
@@ -52,13 +54,13 @@
 
         body {
             font-family: var(--font-primary);
-            background-color: var(--primary-bg); [cite_start]/* Fallback [cite: 109] */
+            background-color: var(--primary-bg); /* Fallback */
             color: var(--text-subtle);
             line-height: 1.7;
             
-            [cite_start]/* Textura de Fundo (Obrigatória) [cite: 99, 101] */
-            background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); [cite_start]/* [cite: 104, 110] */
-            background-attachment: fixed; [cite_start]/* [cite: 103, 111] */
+            /* Textura de Fundo (Obrigatória) */
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-attachment: fixed;
         }
 
         /* --- Layout --- */
@@ -75,15 +77,15 @@
             }
         }
 
-        [cite_start]/* --- Cabeçalho (Fixo) [cite: 144] --- */
+        /* --- Cabeçalho (Fixo) --- */
         header {
-            position: fixed; [cite_start]/* [cite: 144] */
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             padding: var(--space-sm) 5%;
-            background-color: rgba(6, 25, 42, 0.8); [cite_start]/* --primary-bg com alfa [cite: 144] */
-            backdrop-filter: blur(10px); [cite_start]/* [cite: 145] */
+            background-color: rgba(6, 25, 42, 0.8); /* --primary-bg com alfa */
+            backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
             z-index: 100;
         }
@@ -105,7 +107,7 @@
             padding-top: 100px; /* Espaço para o header fixo */
         }
 
-        [cite_start]/* --- Rodapé [cite: 146] --- */
+        /* --- Rodapé --- */
         footer {
             padding: var(--space-md) 5%;
             text-align: center;
@@ -145,7 +147,7 @@
             font-size: var(--font-size-h3);
             color: var(--text-muted);
             margin-top: var(--space-md);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.5rem; /* Espaço antes da lista/tabela */
         }
         
         p {
@@ -157,31 +159,37 @@
             font-weight: 600;
         }
 
-        ul {
-            margin-left: 20px;
+        /* Estilo para listas, garantindo visibilidade */
+        .card ul {
+            list-style-position: inside;
+            margin-left: 0; /* Reset margin */
+            padding-left: 0; /* Reset padding */
             margin-bottom: var(--space-sm);
         }
 
-        li {
-            margin-bottom: 0.5rem;
+        .card li {
+            list-style-type: '✔ '; /* Adiciona um marcador personalizado */
+            padding-left: 10px; /* Espaço após o marcador */
+            margin-bottom: 0.75rem; /* Espaço entre itens da lista */
+            color: var(--text-subtle);
         }
 
-        [cite_start]/* --- Componente: Card [cite: 149] --- */
+        /* --- Componente: Card --- */
         .card {
-            background-color: var(--card-bg); [cite_start]/* [cite: 150] */
-            border: 1px solid var(--border-color); [cite_start]/* [cite: 150] */
-            border-radius: 12px; [cite_start]/* [cite: 151] */
-            padding: var(--space-md); [cite_start]/* [cite: 151] */
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: var(--space-md);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-10px); [cite_start]/* [cite: 152] */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); [cite_start]/* [cite: 152] */
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .card:focus-visible {
-            outline: 3px solid var(--accent-color); [cite_start]/* [cite: 153] */
+            outline: 3px solid var(--accent-color);
             outline-offset: 4px;
         }
 
@@ -190,7 +198,7 @@
             overflow-x: auto;
             width: 100%;
             margin-top: var(--space-md);
-            margin-bottom: var(--space-md);
+            margin-bottom: var(--space-md); /* Espaço após a tabela */
         }
         
         table {
@@ -204,6 +212,7 @@
             text-align: left;
             border-bottom: 1px solid var(--border-color);
             vertical-align: top;
+            color: var(--text-subtle); /* Garante que o texto da tabela seja visível */
         }
 
         thead {
@@ -226,50 +235,59 @@
             color: var(--text-muted);
         }
 
-        [cite_start]/* --- Animação (Conforme Guia de Estilo) [cite: 178] --- */
+        /* --- Animação (Conforme Guia de Estilo) --- */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); [cite_start]} /* [cite: 191] */
-            to { opacity: 1; transform: translateY(0); [cite_start]} /* [cite: 192] */
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .fade-in {
             opacity: 0; /* Começa invisível */
         }
         
-        [cite_start]/* Classe adicionada via JS quando o elemento está visível [cite: 183] */
+        /* Classe adicionada via JS quando o elemento está visível */
         .fade-in.is-visible {
-            animation: fadeIn 0.8s ease-out forwards; [cite_start]/* [cite: 194] */
+            animation: fadeIn 0.8s ease-out forwards;
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho Fixo (Guia de Estilo - Proposta) -->
     <header>
         <div class="header-content">
+            <!-- Logo Específico para Propostas -->
             <img src="https://raw.githubusercontent.com/Clebito2/layout/main/Logo%20live%20oficial-36.png"
-                  alt="Logo Live Consultoria" class="header-logo" loading="lazy"> <span style="color: var(--text-subtle);">Projeto Casas Goianita</span>
+                  alt="Logo Live Consultoria" class="header-logo" loading="lazy">
+            <span style="color: var(--text-subtle);">Projeto Casas Goianita</span>
         </div>
     </header>
 
+    <!-- Conteúdo Principal -->
     <main>
 
+        <!-- Seção Hero -->
         <section class="container fade-in" style="padding-top: var(--space-lg); text-align: center;">
             <h1>Modelo Padronizado (TO-BE)</h1>
+            <!-- Título atualizado para Financeiro -->
             <p style="font-size: 1.25rem; color: var(--text-muted);">Processo do Departamento Financeiro</p>
         </section>
 
+        <!-- Seção Objetivo Geral -->
         <section class="container fade-in">
             <div class="card">
                 <h2>Objetivo Geral do Processo</h2>
+                <!-- Conteúdo atualizado para Financeiro -->
                 <p>Eliminar o trabalho que não agrega valor (Muda, no conceito Lean) e transformar o analista de um "digitador" em um estrategista. Isso se alcança através da padronização (Seiketsu) e do investimento estratégico em tecnologia (Kaizen).</p>
                 <p>O desenho do processo TO-BE é a definição da situação futura ideal, esclarecendo como alcançar o estado desejado por meio de modificações e melhorias estruturais.</p>
             </div>
         </section>
 
+        <!-- Pilar I: Otimização do Fluxo Contas a Pagar -->
         <section class="container fade-in">
             <div class="card">
                 <h2>Pilar I: Otimização do Fluxo Contas a Pagar (O P2P Integrado)</h2>
-                [cite_start]<p>No cenário AS-IS, a entrada de notas fiscais (NF-e) é manual, dependente de um único comprador (Curuca)[cite: 2321], e a aprovação é "cega". O TO-BE exige a digitalização completa desta rotina, transformando o macroprocesso "Da Requisição ao Pagamento".</p>
-                [cite_start]<p><strong>Gargalo (AS-IS) Eliminado:</strong> Digitação manual de NF-e e boletos; gargalos de comunicação com Compras[cite: 2321]; processo de recebimento não padronizado; aprovação manual "cega" de alto risco operacional.</p>
+                <p>No cenário AS-IS, a entrada de notas fiscais (NF-e) é manual, dependente de um único comprador (Curuca), e a aprovação é "cega". O TO-BE exige a digitalização completa desta rotina, transformando o macroprocesso "Da Requisição ao Pagamento".</p>
+                <p><strong>Gargalo (AS-IS) Eliminado:</strong> Digitação manual de NF-e e boletos; gargalos de comunicação com Compras; processo de recebimento não padronizado; aprovação manual "cega" de alto risco operacional.</p>
                 
                 <h3>1.1. Entrada de Dados e Padronização</h3>
                 <div class="table-wrapper">
@@ -293,7 +311,7 @@
                                 <td>A padronização é crucial para automação eficaz e escalabilidade.</td>
                             </tr>
                             <tr>
-                                [cite_start]<td>Gargalo de Comunicação: Financeiro depende do Compras para lançar notas. [cite: 2321]</td>
+                                <td>Gargalo de Comunicação: Financeiro depende do Compras para lançar notas.</td>
                                 <td><strong>Definição de SLA e Fluxo (Workflow):</strong> Criar um fluxo de trabalho (workflow) com prazo obrigatório (SLA) para Compras lançar a NF-e.</td>
                                 <td>Garante que cada colaborador saiba suas responsabilidades e evita gaps de comunicação.</td>
                             </tr>
@@ -310,38 +328,40 @@
             </div>
         </section>
 
+        <!-- Pilar II: Automação da Liquidez e Pagamentos -->
         <section class="container fade-in">
             <div class="card">
                 <h2>Pilar II: Automação da Liquidez e Pagamentos</h2>
                 <p>As tarefas de conciliação e pagamento de folha consomem tempo e são arcaicas no estado atual. A automação deve focar nessas tarefas repetitivas.</p>
-                [cite_start]<p><strong>Gargalo (AS-IS) Eliminado:</strong> Conciliação manual "cansativo" e "bandeira por bandeira" [cite: 2288, 2318][cite_start]; pagamento de folha "Pix por Pix, funcionário por funcionário" [cite: 2304, 2320][cite_start]; controle de cofre em planilhas Excel externas [cite: 2188, 2235][cite_start]; contornos manuais para conciliação de Pix[cite: 2204, 2239].</p>
+                <p><strong>Gargalo (AS-IS) Eliminado:</strong> Conciliação manual "cansativo" e "bandeira por bandeira"; pagamento de folha "Pix por Pix, funcionário por funcionário"; controle de cofre em planilhas Excel externas; contornos manuais para conciliação de Pix.</p>
 
                 <h3>2.1. Conciliação Automática (Contas a Receber)</h3>
                 <ul>
-                    <li><strong>Conciliação de Cartões:</strong> Implementar um módulo no ERP que importe arquivos das operadoras (ex: Cielo) e realize a conciliação automática. [cite_start]Isso elimina o processo manual "cansativo" e suscetível a erros de conciliar "bandeira por bandeira" em planilhas. [cite: 2288, 2290, 2293, 2318]</li>
-                    <li><strong>RPA e IA (Process Mining):</strong> Utilizar Automação Robótica de Processos (RPA) para tarefas altamente repetitivas, como a transferência de dados de notas fiscais ou a conciliação bancária, liberando o analista para focar em análises críticas.</li>
-                    [cite_start]<li><strong>Recebimento de Pix:</strong> O novo ERP deve conciliar os recebimentos de Pix diretamente com as vendas, integrando-os ao extrato bancário, eliminando o "contorno manual complexo" de lançar o Pix como entrada e saída na planilha do cofre. [cite: 2204, 2239]</li>
+                    <li><strong>Conciliação de Cartões:</strong> Implementar um módulo no ERP que importe arquivos das operadoras (ex: Cielo) e realize a conciliação automática. Isso elimina o processo manual "cansativo" e suscetível a erros de conciliar "bandeira por bandeira" em planilhas.</li>
+                    <li><strong>RPA e IA (Process Mining):</strong> Utilizar Automação Robótica de Processos (RPA) para tarefas highly repetitivas, como a transferência de dados de notas fiscais ou a conciliação bancária, liberando o analista para focar em análises críticas.</li>
+                    <li><strong>Recebimento de Pix:</strong> O novo ERP deve conciliar os recebimentos de Pix diretamente com as vendas, integrando-os ao extrato bancário, eliminando o "contorno manual complexo" de lançar o Pix como entrada e saída na planilha do cofre.</li>
                 </ul>
 
                 <h3>2.2. Execução de Pagamentos (Eliminando o "Pix por Pix")</h3>
                 <ul>
-                    [cite_start]<li><strong>Pagamento em Lote (CNAB):</strong> Substituir o pagamento manual "Pix por Pix, funcionário por funcionário" [cite: 2304, 2320] por uma função de geração de arquivos de pagamento em lote (CNAB) para a folha salarial.</li>
-                    [cite_start]<li><strong>Digitalização do Cofre:</strong> Migrar o controle do "Cofre" (dinheiro em espécie e "Vales") das planilhas Excel externas [cite: 2188, 2235] [cite_start]para o novo sistema (ERP), eliminando o risco crítico de dependência de conhecimento tácito e fórmulas externas. [cite: 2237] O lançamento de despesas deve ser digitalizado no momento em que ocorrem.</li>
+                    <li><strong>Pagamento em Lote (CNAB):</strong> Substituir o pagamento manual "Pix por Pix, funcionário por funcionário" por uma função de geração de arquivos de pagamento em lote (CNAB) para a folha salarial.</li>
+                    <li><strong>Digitalização do Cofre:</strong> Migrar o controle do "Cofre" (dinheiro em espécie e "Vales") das planilhas Excel externas para o novo sistema (ERP), eliminando o risco crítico de dependência de conhecimento tácito e fórmulas externas. O lançamento de despesas deve ser digitalizado no momento em que ocorrem.</li>
                 </ul>
             </div>
         </section>
 
+        <!-- Pilar III: Governança, Visibilidade e Melhoria Contínua -->
         <section class="container fade-in">
             <div class="card">
                 <h2>Pilar III: Governança, Visibilidade e Melhoria Contínua</h2>
                 <p>O Financeiro ideal deve fornecer subsídios para a tomada de decisão. Para isso, a gestão deve migrar de relatórios reativos para um monitoramento proativo e estratégico.</p>
-                [cite_start]<p><strong>Gargalo (AS-IS) Eliminado:</strong> Falta de visão "geralzão" em tempo real [cite: 2048, 2153][cite_start]; ausência de KPIs mensuráveis; mistura de despesas pessoais (PF) dos sócios com despesas operacionais (PJ)[cite: 2262, 2312]; falta de procedimentos padronizados.</p>
+                <p><strong>Gargalo (AS-IS) Eliminado:</strong> Falta de visão "geralzão" em tempo real; ausência de KPIs mensuráveis; mistura de despesas pessoais (PF) dos sócios com despesas operacionais (PJ); falta de procedimentos padronizados.</p>
 
                 <h3>3.1. Visibilidade e Indicadores (BI Dashboard)</h3>
                 <ul>
-                    [cite_start]<li><strong>Dashboard Financeiro Integrado:</strong> O sistema deve oferecer um Dashboard de Alto Nível (BI) que proporcione uma visão holística e em tempo real (o "geralzão" [cite: 2048][cite_start]) do negócio: saldo em contas bancárias [cite: 2156][cite_start], saldo do cofre [cite: 2157][cite_start], Contas a Receber [cite: 2158] [cite_start]e a Pagar[cite: 2159].</li>
+                    <li><strong>Dashboard Financeiro Integrado:</strong> O sistema deve oferecer um Dashboard de Alto Nível (BI) que proporcione uma visão holística e em tempo real (o "geralzão") do negócio: saldo em contas bancárias, saldo do cofre, Contas a Receber e a Pagar.</li>
                     <li><strong>KPIs Claros e Mensuráveis:</strong> Definir Indicadores de Desempenho (KPIs) específicos, como o tempo de ciclo de pagamento e a taxa de acerto de conciliação. Indicadores devem ser monitoráveis e mensuráveis.</li>
-                    [cite_start]<li><strong>Separação de Centros de Custo:</strong> Criar Centros de Custo distintos no sistema para separar claramente despesas operacionais daquelas pessoais dos sócios[cite: 2262, 2312, 2163], promovendo transparência e boa Governança Corporativa.</li>
+                    <li><strong>Separação de Centros de Custo:</strong> Criar Centros de Custo distintos no sistema para separar claramente despesas operacionais daquelas pessoais dos sócios, promovendo transparência e boa Governança Corporativa.</li>
                 </ul>
 
                 <h3>3.2. Cultura de Melhoria Contínua (Shitsuke)</h3>
@@ -353,6 +373,7 @@
             </div>
         </section>
                 
+        <!-- Conclusão -->
         <section class="container fade-in">
             <div class="card">
                 <h2>Conclusão do Modelo: A Melhoria Contínua (Kaizen)</h2>
@@ -362,32 +383,36 @@
         </section>
     </main>
 
+    <!-- Rodapé (Guia de Estilo - Proposta) -->
     <footer>
+        <!-- Logo Específico para Rodapé de Proposta -->
         <img src="https://raw.githubusercontent.com/Clebito2/layout/main/Logo%20live%20oficial-34.png"
-              alt="Logo Live Consultoria" class="footer-logo" loading="lazy"> <p style="color: var(--text-primary); font-weight: 600;">Live Consultoria Empresarial</p>
+              alt="Logo Live Consultoria" class="footer-logo" loading="lazy">
+        <p style="color: var(--text-primary); font-weight: 600;">Live Consultoria Empresarial</p>
         <p style="color: var(--text-subtle); font-size: 0.9rem;">Reestruturação Estratégica | Projeto Casas Goianita</p>
     </footer>
 
+    <!-- Script para Animação (Obrigatório pelo Guia de Estilo V2) -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Seleciona todos os elementos que devem ter a animação
+            // Select all elements that should fade in
             const targets = document.querySelectorAll('.fade-in');
 
-            // Configura o IntersectionObserver
+            // Set up the IntersectionObserver
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    // Se o elemento está visível
+                    // If the element is visible
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-                        // Opcional: parar de observar depois que a animação rodou
+                        // Optional: stop observing once the animation has run
                         // observer.unobserve(entry.target); 
                     }
                 });
             }, {
-                threshold: 0.1 // Ativa quando 10% do elemento está visível
+                threshold: 0.1 // Activate when 10% of the element is visible
             });
 
-            // Observa cada elemento
+            // Observe each target element
             targets.forEach(target => {
                 observer.observe(target);
             });
